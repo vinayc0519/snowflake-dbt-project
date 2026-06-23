@@ -27,8 +27,8 @@ jobs:
       - name: Install Packages
         run: dbt deps
 
-      - name: Run Tests
-        run: dbt test
+     - name: Run Tests
+  run: dbt test --profiles-dir .
 
-      - name: Run Models
-        run: dbt run
+- name: Run Models
+  run: dbt run --profiles-dir .
