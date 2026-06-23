@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: sales_source
+    database: TRAINING_DB
+    schema: SALES
+
+    tables:
+      - name: ORDERS
+      - name: CUSTOMERS

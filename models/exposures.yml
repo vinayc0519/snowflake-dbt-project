@@ -1,0 +1,17 @@
+version: 2
+
+exposures:
+  - name: product_dashboard
+    label: Product Dashboard
+    type: dashboard
+    maturity: high
+
+    owner:
+      name: Vinay
+      email: vinay@example.com
+
+    depends_on:
+      - ref('product_source_model')
+
+    description: >
+      Dashboard used to analyze product prices.

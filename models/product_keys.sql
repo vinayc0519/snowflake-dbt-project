@@ -1,0 +1,8 @@
+SELECT
+ 
+ PRODUCT_ID,
+ PRODUCT_NAME,
+ PRICE,
+ {{ dbt_utils.generate_surrogate_key(['PRODUCT_ID']) }} AS PRODUCT_KEY
+
+FROM PRODUCT_SOURCE

@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: product_source_model
+    columns:
+
+      - name: PRODUCT_ID
+        tests:
+          - unique
+          - not_null
+
+      - name: PRODUCT_NAME
+        tests:
+          - accepted_values:
+              values:
+                - Laptop
+                - Mobile
+
+      - name: PRICE
+        tests:
+          - not_null
