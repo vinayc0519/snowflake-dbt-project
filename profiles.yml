@@ -1,0 +1,15 @@
+snowflake_project:
+  target: dev
+
+  outputs:
+    dev:
+      type: snowflake
+      account: gh13737.ap-southeast-7.aws
+      user: VINAYC0519
+      password: "Ammananna@1234"
+      role: ACCOUNTADMIN
+      database: TRAINING_DB
+      warehouse: COMPUTE_WH
+      schema: SALES
+      threads: 1
+      client_session_keep_alive: false
